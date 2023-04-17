@@ -2,7 +2,10 @@
 
 @section('content')
 <div class="container">
-    <form action="">
+    <form action="{{ route('comics.store') }}" method="POST">
+
+        @csrf
+
         <h1>
             Vuoi creare un comic a tuo piacere? Sei nel posto giusto!
         </h1>
@@ -30,7 +33,7 @@
         </div>
         <div class="mb-3">
             <label for="thumb" class="form-label">URL immagine</label>
-            <input type="text" class="form-control" id="thumb" name="thumb" required>
+            <input type="text" class="form-control" id="thumb" name="thumb">
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Prezzo</label>

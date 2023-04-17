@@ -7,6 +7,7 @@
               <tr>
                 <th scope="col">Titolo Comics</th>
                 <th scope="col">Links Info</th>
+                <th scope="col">Links edit</th>
               </tr>
             </thead>
             <tbody>
@@ -16,6 +17,11 @@
                         <td>
                             <a href="{{ route('comics.show', ['comic' => $comic->id]) }}"> {{-- link al comic --}}
                                 Clicca per visualizzare il prescelto!
+                            </a>
+                        </td>
+                        <td>
+                            <a href="{{ route('comics.edit', $comic) }}">
+                                Clicca per modificare!
                             </a>
                         </td>
                     </tr>

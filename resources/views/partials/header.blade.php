@@ -9,8 +9,5 @@
         <li>
             <a href="{{route('comics.create')}}">Crea nuovo Comic</a>
         </li>
-        {{-- <li>
-            <a href="{{route('comics.edit')}}">Modifica Comic</a>
-        </li> --}}
     </ul>
 </header>

@@ -39,7 +39,9 @@
             <label for="price" class="form-label">Prezzo</label>
             <input type="text" class="form-control" id="price" name="price" value=" {{$comic->price}} ">
         </div>
+        
         <button type="submit" class="btn btn-primary">Modifica</button>
+
     </form>
 </div>
 @endsection

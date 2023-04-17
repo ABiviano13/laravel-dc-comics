@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        MAIN
-    </div>
+
+<div class="container">
+    Scopri le nostre paste!
+</div>
+
 @endsection

@@ -9,6 +9,13 @@ use Illuminate\Http\Request;
 class ComicController extends Controller
 {
     public function index() {
-        return view('welcome');
+        
+        $comics = Comic::all();
+
+        $data = [
+            'comics' => $comics
+        ];
+
+        return view('comics.index', $data);
     }
 }

@@ -14,10 +14,8 @@
                     <tr>
                         <th scope="row">{{$comic->title}}</th>
                         <td>
-                            <a href="#"> {{-- link al comic --}}
-                                <button type="button" class="btn btn-primary">
-                                    Clicca per visualizzare il prescelto!
-                                </button>
+                            <a href="{{ route('comics.show', ['comic' => $comic->id]) }}"> {{-- link al comic --}}
+                                Clicca per visualizzare il prescelto!
                             </a>
                         </td>
                     </tr>

@@ -16,4 +16,12 @@ class ComicController extends Controller
 
         return view('comics.index', compact('comics'));
     }
+
+    public function show($comic) {
+        // dd($comic);
+
+        $comic = Comic::find($comic);
+
+        return view('comics.show', compact('comic'));
+    }
 }

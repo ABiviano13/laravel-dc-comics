@@ -2,10 +2,11 @@
 
 @section('content')
 <div class="container">
-    <form action="" method="POST">
+    <form action="{{route('comics.update', $comic)}}" method="POST">
 
         @csrf
-
+        @method('PUT')
+        
         <h1>
             Modifica {{$comic->title}}
         </h1>

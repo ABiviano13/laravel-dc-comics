@@ -19,10 +19,15 @@
                                 Clicca per visualizzare il prescelto!
                             </a>
                         </td>
-                        <td>
-                            <a href="{{ route('comics.edit', $comic) }}">
+                        <td class="d-flex gap-3">
+                            <a href="{{ route('comics.edit', $comic) }}" class="text-success">
                                 Clicca per modificare!
                             </a>
+                            <form action="{{route('comics.destroy', $comic)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <input type="submit" class="btn btn-danger" value="Delete">
+                            </form>
                         </td>
                     </tr>
                 @endforeach

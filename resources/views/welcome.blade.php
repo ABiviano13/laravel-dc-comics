@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-    Scopri le nostre paste!
+    Scopri i nostri comics!
 </div>
 
 @endsection
